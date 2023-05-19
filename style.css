@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   gap: 90px;
   max-width: 1200px;
-  min-width: 500px;
+  min-width: 300px;
   margin-left: auto;
   margin-right: auto;
 }

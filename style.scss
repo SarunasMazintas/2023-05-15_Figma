@@ -326,11 +326,13 @@ header {
         .cards {
             display: flex;
             column-gap: 40px;
+            overflow: scroll;
 
             .card {
                 width: 290px;
                 background: #EEEEEE;
                 border-radius: 16px;
+                
 
                 .image-wrapper {
                     width: 100%;
@@ -340,13 +342,13 @@ header {
                     }
                 }
 
-                &:not(:nth-child(1)) {
-                    @include responsive.lg {
-                        display: block;
-                    }
+                // &:not(:nth-child(1)) {
+                //     @include responsive.lg {
+                //         display: block;
+                //     }
 
-                    display: none;
-                }
+                //     display: none;
+                // }
 
                 .content {
                     padding: 24px;

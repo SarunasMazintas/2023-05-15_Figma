@@ -317,6 +317,7 @@ header .container .navigation .navigation-item {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+  overflow: scroll;
 }
 .showcase .container .cards .card {
   width: 290px;
@@ -328,14 +329,6 @@ header .container .navigation .navigation-item {
 }
 .showcase .container .cards .card .image-wrapper img {
   width: 100%;
-}
-.showcase .container .cards .card:not(:nth-child(1)) {
-  display: none;
-}
-@media (min-width: 900px) {
-  .showcase .container .cards .card:not(:nth-child(1)) {
-    display: block;
-  }
 }
 .showcase .container .cards .card .content {
   padding: 24px;

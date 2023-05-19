@@ -1,6 +1,17 @@
+@mixin m {
+    @media(min-width:600px) {
+        @content;
+    }
+}
 
 @mixin lg {
-    @media(min-width:900px) {
+    @media(min-width:800px) {
+        @content;
+    }
+}
+
+@mixin minSize {
+    @media(max-width:500px) {
         @content;
     }
 }

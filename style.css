@@ -233,7 +233,7 @@ header .container .navigation .navigation-item {
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 20px;
 }
 .upsell .content .title {

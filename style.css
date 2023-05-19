@@ -20,7 +20,7 @@ body {
 .container {
   margin: 32px;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .container {
     margin: 0px 64px;
   }
@@ -55,7 +55,7 @@ header .container .logo .logo-text {
   display: flex;
   letter-spacing: 0.05em;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   header .container .navigation .navigation-bars {
     display: none;
   }
@@ -67,7 +67,7 @@ header .container .navigation .navigation-items {
 header .container .navigation .navigation-item {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   header .container .navigation .navigation-item {
     display: block;
     font-family: "Inter";
@@ -80,7 +80,7 @@ header .container .navigation .navigation-item {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .hero,
   .footer-upsell {
     display: flex;
@@ -99,7 +99,7 @@ header .container .navigation .navigation-item {
   align-items: center;
   width: 70%;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .hero .content-all .container,
   .footer-upsell .content-all .container {
     display: flex;
@@ -115,7 +115,7 @@ header .container .navigation .navigation-item {
   gap: 15px;
   position: relative;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .hero .content-all .content,
   .footer-upsell .content-all .content {
     width: 50%;
@@ -170,30 +170,36 @@ header .container .navigation .navigation-item {
 }
 .hero .content-all .image-wrapper,
 .footer-upsell .content-all .image-wrapper {
-  width: 450px;
+  width: 172px;
   position: absolute;
-  right: -200px;
-  top: 76px;
+  right: 0;
+  top: 275px;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .hero .content-all .image-wrapper,
   .footer-upsell .content-all .image-wrapper {
     width: 50%;
     position: relative;
     right: auto;
-    top: -15px;
+    top: -50px;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
 .hero .content-all .image-wrapper img,
 .footer-upsell .content-all .image-wrapper img {
-  width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  height: 345px;
+  width: 173px;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .hero .content-all .image-wrapper img,
   .footer-upsell .content-all .image-wrapper img {
     width: 500px;
+    height: auto;
   }
 }
 
@@ -203,7 +209,7 @@ header .container .navigation .navigation-item {
   background-size: cover;
   background-position: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .upsell {
     background-image: none;
   }
@@ -247,7 +253,7 @@ header .container .navigation .navigation-item {
 .press .container a {
   width: calc(50% - 15px);
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .press .container a {
     width: 20%;
   }
@@ -255,7 +261,7 @@ header .container .navigation .navigation-item {
 .press .container a img {
   height: 45px;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .press .container a img {
     width: 100%;
   }
@@ -263,7 +269,7 @@ header .container .navigation .navigation-item {
 .press .container a:nth-of-type(4) {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .press .container a:nth-of-type(4) {
     display: block;
   }
@@ -271,12 +277,12 @@ header .container .navigation .navigation-item {
 .press .container a .desktop {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .press .container a .desktop {
     display: block;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .press .container a .mobile {
     display: none;
   }
@@ -326,7 +332,7 @@ header .container .navigation .navigation-item {
 .showcase .container .cards .card:not(:nth-child(1)) {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .showcase .container .cards .card:not(:nth-child(1)) {
     display: block;
   }
@@ -408,7 +414,7 @@ header .container .navigation .navigation-item {
   line-height: 50%;
   z-index: 1;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .horizontal_line {
     margin: 20px 0;
     width: calc(100vw - 128px);
@@ -430,18 +436,22 @@ header .container .navigation .navigation-item {
 }
 .footer-upsell .container .image-wrapper {
   height: 75%;
-  right: -350px;
+  width: 130px;
+  right: 0px;
   top: auto;
   bottom: 0px;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .footer-upsell .container .image-wrapper {
     height: 100%;
     right: -200px;
+    width: 20%;
   }
 }
 .footer-upsell .container .image-wrapper img {
-  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
   height: 100%;
 }
 
@@ -456,7 +466,7 @@ footer .container:nth-of-type(1) {
   flex-direction: column;
   gap: 64px;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   footer .container:nth-of-type(1) {
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -506,7 +516,7 @@ footer .container:nth-of-type(1) .navigation {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   footer .container:nth-of-type(1) .navigation {
     display: flex;
     justify-content: space-between;
@@ -521,7 +531,7 @@ footer .container:nth-of-type(1) .navigation .column .name {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 19px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -555,7 +565,7 @@ footer .container:nth-of-type(2) .bottom-text {
 footer .container:nth-of-type(2) .bottom-text .launching {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   footer .container:nth-of-type(2) .bottom-text .launching {
     display: block;
   }

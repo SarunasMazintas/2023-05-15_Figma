@@ -114,17 +114,18 @@ header {
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                margin-right: 0;
+                margin-right: 60px;
+                
             }
-
-            width: 70%;
+            margin-right: 0;
+            width: 100%;
         }
 
         .content {
             @include responsive.lg {
                 width: 50%;
             }
-
+            width: 60%;
             margin-top: 50px;
             display: flex;
             flex-direction: column;
@@ -173,34 +174,22 @@ header {
 
         .image-wrapper {
             @include responsive.minSize{
-                display: none;
             }
-            
+
             @include responsive.lg {
-                width: 50%;
-                position: relative;
-                right: auto;
-                top: -50px;
-                object-fit: cover;
-                overflow: hidden;
+                overflow: visible;
             }
 
-
-            width: 172px;
-            position: absolute;
-            right: 0;
-            top: 275px;
-
+            width:40%;
+            
+            overflow: hidden;
             img {
                 @include responsive.lg {
-                    width: 500px;
-                    height: auto;
+                    translate:0px;
                 }
-
-                object-fit: cover;
-                object-position: left;
-                height: 345px;
-                width: 173px;
+                width:450px;
+                translate:0px;
+                
             }
         }
     }
